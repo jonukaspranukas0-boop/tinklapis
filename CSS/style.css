@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    color:#444;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+    position:relative;
+    color:white;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+}
+
+.nav{
+    position:absolute;
+    top:20px;
+    left:40px;
+    right:40px;
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    font-size:14px;
+}
+
+.nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.hero-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:300;
+    margin-bottom:10px;
+}
+
+.hero p{
+    opacity:.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#e3b505;
+    border:none;
+    padding:12px 28px;
+    color:white;
+    font-weight:bold;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+
+.section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section.white{
+    background:white;
+}
+
+.section h2{
+    font-weight:300;
+    margin-bottom:10px;
+}
+
+.line{
+    width:60px;
+    height:3px;
+    background:#e3b505;
+    margin:20px auto;
+}
+
+
+.grid{
+    margin-top:40px;
+    display:grid;
+    gap:25px;
+}
+
+.grid.work{
+    grid-template-columns:1fr 1fr;
+}
+
+.grid.work img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    margin-top:40px;
+}
+
+.service{
+    text-align:center;
+}
+
+.icon{
+    font-size:28px;
+    margin-bottom:15px;
+    color:yellow;
+}
+
+.testimonials p{
+    max-width:600px;
+    margin:20px auto;
+    color:#666;
+}
+
+.newsletter{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.newsletter input{
+    padding:12px;
+    width:280px;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+
+.newsletter button{
+    margin-left:10px;
+}
+
+
+footer{
+    background:gray;
+    color:lightgray;
+    text-align:center;
+    padding:40px 20px;
+    font-size:13px;
+}
+
+
+@media (max-width:900px){
+
+    .grid.work{
+        grid-template-columns:1fr;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+}
